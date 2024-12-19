@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Admission Form</title>
+  </head>
+  <body>
+    <h1 align="center">College Admission Form</h1>
+    <!--<img src="" alt="Background Image" style="width: 100%; height: auto;" /> -->
+    <form action="submit_admission_form" method="post">
+      Salutation:
+      <select id="salutation" name="salutation" required>
+        <option value="">--Select--</option>
+        <option value="mr">Mr.</option>
+        <option value="mrs">Mrs.</option><br>
+      First Name:<input type="text" id="firstname" name="firstname" required />
+      Last Name:<input
+        type="text"
+        id="lastname"
+        name="lastname"
+        required
+      /><br>
+
+      Email: <input type="email" id="email" name="email" required /> Phone
+      Number:<input type="tel" id="phone" name="phone" required /><br>
+
+      Gender:
+      <input type="radio" id="male" name="gender" value="male" required /> Male
+      <input type="radio" id="female" name="gender" value="female" /> Female
+      <input type="radio" id="other" name="gender" value="other" />
+      Other<br>
+
+      Aadhar Number:
+      <input type="text" id="aadhar" name="aadhar" required /><br>
+      Salutation:
+      <select id="salutation" name="salutation" required>
+        <option value="">--Select--</option>
+        <option value="mr">Mr.</option>
+        <option value="mrs">Mrs.</option><br>
+      Guardian Name:
+      <input type="text" id="guardian" name="guardian" required /> Guardian
+      Phone Number:
+      <input
+        type="tel"
+        id="guardian_phone"
+        name="guardian_phone"
+        required
+      /><br>
+      Class 10th Marks:
+      <input type="number" id="marks10" name="marks10" required />
+      Roll Number:
+      <input type="text" id="roll" name="roll" required /> Registration Number:
+      <input
+        type="text"
+        id="registration"
+        name="registration"
+        required
+      /><br>
+      Class 12th Marks:
+      <input type="number" id="marks12" name="marks12" required />
+      Roll Number:
+      <input type="text" id="roll" name="roll" required /> Registration Number:
+      <input
+        type="text"
+        id="registration"
+        name="registration"
+        required
+      /><br>
+      Select Course:
+      <select id="course" name="course" required>
+        <option value="">--Select--</option>
+        <option value="bsc">B.Sc</option>
+        <option value="bcom">B.Com</option>
+        <option value="ba">B.A</option>
+        <option value="btech">B.Tech</option></select
+      ><br>
+      Extra-Curricular Interests:
+      <input type="checkbox" id="sports" name="extracurricular" value="sports" /> Sports
+      <input type="checkbox" id="music" name="extracurricular" value="music" /> Music
+      <input type="checkbox" id="arts" name="extracurricular" value="arts" /> Arts
+      <input type="checkbox" id="coding" name="extracurricular" value="coding" /> Coding
+      <input type="checkbox" id="Other" name="extracurricular" value="coding" /> Other<br /><br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
